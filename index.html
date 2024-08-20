@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <div class="place">
+          <div class="placeTime" id="placeTime">Asia/IST</div>
+          <div class="location" id="location">India</div>
+        </div>
+
+        <div class="date">
+          <div class="time" id="time">09:00 <span id="am-pm">AM</span></div>
+          <div class="Cdate" id="Cdate">Monday, 06 June</div>
+          <div class="Cweather" id="CweatherInfo">
+            <!-- <div class="weatherInfo">
+                        <div>Wind Speed</div>
+                        <div>120</div>
+                    </div>
+                    <div class="weatherInfo">
+                        <div>Humidity</div>
+                        <div>85%</div>
+                    </div>
+                    <div class="weatherInfo">
+                        <div>Pressure</div>
+                        <div>101</div>
+                    </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mainForecast">
+      <div class="today" id="todayTemp">
+         <img
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+          alt="weathericon"
+          class="wicon" height="50px" width="50px"
+         />
+        <div class="other">
+         <div class="day">Monday</div>
+         <div class="temp">Day - 42.7&#150; C</div>
+         <div class="temp">Night - 34.7&#150; C</div>
+      </div>
+    </div>
+      <div class="subForecast" id="subForecast">
+        <div class="nextDay">
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weathericon"
+            class="wicon"
+          />
+          <div class="day">Tuesday</div>
+          <div class="temp">Day - 42.7&#150; C</div>
+          <div class="temp">Night - 34.7&#150; C</div>
+        </div>
+        <div class="nextDay">
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weathericon"
+            class="wicon"
+          />
+          <div class="day">Wednesday</div>
+          <div class="temp">Day - 42.7&#150; C</div>
+          <div class="temp">Night - 34.7&#150; C</div>
+        </div>
+        <div class="nextDay">
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weathericon"
+            class="wicon"
+          />
+          <div class="day">Thursday</div>
+          <div class="temp">Day - 42.7&#150; C</div>
+          <div class="temp">Night - 34.7&#150; C</div>
+        </div>
+        <div class="nextDay">
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weathericon"
+            class="wicon"
+          />
+          <div class="day">Friday</div>
+          <div class="temp">Day - 42.7&#150; C</div>
+          <div class="temp">Night - 34.7&#150; C</div>
+        </div>
+        <div class="nextDay">
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weathericon"
+            class="wicon"
+          />
+          <div class="day">Saturday</div>
+          <div class="temp">Day - 42.7&#150; C</div>
+          <div class="temp">Night - 34.7&#150; C</div>
+        </div>
+        <div class="nextDay">
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="weathericon"
+            class="wicon"
+          />
+          <div class="day">Sunday</div>
+          <div class="temp">Day - 42.7&#150; C</div>
+          <div class="temp">Night - 34.7&#150; C</div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

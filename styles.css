@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Teko",sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container{
+    color: white;
+    padding: 30px 50px;
+}
+
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.place{
+    text-align: end;
+}
+
+.place .placeTime{
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.place .location{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.info .Cweather{
+    display: flex;
+    flex-direction: column;
+    background: rgb(66, 65, 65);
+    padding:20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #fff8f8;
+
+}
+
+.info .Cweather .weatherInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date .time{
+    font-size: 80px;
+    font-weight: 150;
+}
+
+.date #am-pm{
+    font-size: 40px;
+    margin-left: 15px;
+}
+
+.date .Cdate{
+    font-size: 35px;
+}
+
+.info .Cweather{
+    background: rgba(24,24,27,0.5);
+    padding: 10px;
+    margin: 10px 10px 0px 0px ;
+    border-radius: 20px;
+}
+
+.mainForecast{
+    background: rgba(24,24,27,0.8);
+    padding: 25px;
+    position: top;
+    bottom: 0;
+    display: flex;
+    color:white;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.mainForecast .today{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding:15px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2);
+}
+
+.mainForecast .today .day{
+    padding: 5px 15px;
+    background: #3C3C44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.mainForecast .today .temp{
+    font-size: 16px;
+    padding-top: 19px;
+    padding-left: 15px;
+}
+
+
+
+
+.mainForecast .subForecast{
+    display: flex;
+}
+
+.subForecast .nextDay{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2)
+}
+
+.subForecast .nextDay .day{
+    padding: 5px 15px;
+    background: #3C3C44;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.subForecast .nextDay .temp{
+    font-weight: 100;
+    font-size: 12px;
+}
+
+@media only screen and (max-width:730px){
+    .container{
+        padding: 20px;
+    }
+
+    .mainForecast{
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+
+    .mainForecast .today .temp{
+        font-size: 17px;
+    }
+
+    .date .time{
+        font-size: 50px;
+    }
+
+    .date #am-pm{
+        font-size: 20px;
+    }
+
+    .date .Cdate{
+        font-size: 20px;
+    }
+
+    .place{
+        text-align: end;
+        margin-top: 15px;
+    }
+
+    .place .placeTime{
+        font-size: 20px;
+    }
+
+    .info .Cweather{
+        padding: 12px;
+    }
+
+    .info .Cweather .weatherInfo{
+        padding: 14px;
+    }
+
+    @media only screen and (max-width: 1400px){
+        .mainForecast{
+            justify-content: start;
+            align-items: none;
+            overflow-x: scroll;
+        }
+    }
+}
+
